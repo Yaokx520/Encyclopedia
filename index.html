@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>十万个为什么</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="selector">
+      <p class="eyebrow">PDF 附件导航</p>
+      <h1>十万个为什么</h1>
+      <div id="categoryList" class="category-list" aria-label="选择分类"></div>
+      <div class="actions">
+        <a id="openPdf" class="primary-link" href="#" target="_blank" rel="noopener">打开 PDF</a>
+        <a id="downloadPdf" class="secondary-link" href="#" download>下载</a>
+      </div>
+    </section>
+
+    <section class="viewer" aria-label="PDF 预览">
+      <div class="viewer-header">
+        <span id="currentTitle">请选择一个分类</span>
+      </div>
+      <iframe id="pdfFrame" title="PDF 预览"></iframe>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
